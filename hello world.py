@@ -11,3 +11,15 @@ class LinkedList:
         self.tail = new_node
         self.length  = 1
 
+    def append (self, value):
+
+        new_node = Node(value)
+        temp = self.tail
+        temp.next = new_node
+        self.tail = new_node
+
+        self.length += 1
+
+        return temp
+
+    
